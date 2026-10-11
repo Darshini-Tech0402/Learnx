@@ -1,5 +1,5 @@
 import { api, fileUrl } from './api';
-import { CURRENT_STUDENT } from './lxStore';
+import { CURRENT_STUDENT } from './lxstore';
 
 export const getAssignments = () => api.get('/assignments');
 

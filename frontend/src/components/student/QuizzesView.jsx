@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ArrowLeft, CheckCircle2, XCircle, RotateCcw, Trophy, X, ChevronRight } from 'lucide-react';
 import LxAgent from '../common/LxAgent';
 import { c, ui, grid } from '../../styles/theme';
-import { getCourses, getUnitsForCourse, getUnit, submitQuiz, getMyQuizAttempts } from '../../services/quizBackend';
+import { getCourses, getUnitsForCourse, getUnit, submitQuiz, getMyQuizAttempts } from '../../services/quizbackend';
 
 const LETTERS = ['A', 'B', 'C', 'D'];
 

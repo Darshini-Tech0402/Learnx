@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ClipboardList, BrainCircuit, CalendarCheck, Award, Lightbulb } from 'lucide-react';
-import { CURRENT_STUDENT, SUBJECTS, TARGET, useLxStore } from '../../services/lxStore';
+import { CURRENT_STUDENT, SUBJECTS, TARGET, uselxstore } from '../../services/lxstore';
 import { getAssignments, getMySubmissions } from '../../services/backend';
 import { getSession } from '../../services/session';
 import AssignmentBrief from '../common/AssignmentBrief';
@@ -28,7 +28,7 @@ const buildTip = ({ attendancePct, avgQuiz, overdue, pending }) => {
 
 const ProfileView = () => {
   const me = getSession() ?? {};
-  const { quizAttempts } = useLxStore();
+  const { quizAttempts } = uselxstore();
   const [assignments, setAssignments] = useState([]);
   const [subs, setSubs] = useState([]);
   const [loadError, setLoadError] = useState(null);

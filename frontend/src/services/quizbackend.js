@@ -1,5 +1,5 @@
 import { api } from './api';
-import { CURRENT_STUDENT } from './lxStore';
+import { CURRENT_STUDENT } from './lxstore';
 
 export const getCourses = () => api.get('/courses');
 export const getUnitsForCourse = (code) => api.get(`/courses/${code}/units`);

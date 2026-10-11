@@ -48,7 +48,7 @@ const subscribe = (cb) => {
   return () => window.removeEventListener('learnx:change', cb);
 };
 
-export const useLxStore = () => useSyncExternalStore(subscribe, load, load);
+export const uselxstore = () => useSyncExternalStore(subscribe, load, load);
 
 const uid = () =>
   typeof crypto !== 'undefined' && crypto.randomUUID

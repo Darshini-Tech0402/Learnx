@@ -1,11 +1,11 @@
 import { useMemo } from 'react';
 import { SUBJECT_UNITS } from '../../data/quizUnits';
-import { useLxStore } from '../../services/lxstore';
+import { uselxstore } from '../../services/lxstore';
 import { canSeeSubject } from '../../services/session';
 import { ui } from '../../styles/theme';
 
 const QuizManager = () => {
-  const { quizAttempts } = useLxStore();
+  const { quizAttempts } = uselxstore();
 
   // Scores per unit, from attempts recorded in this browser
   const stats = useMemo(() => {

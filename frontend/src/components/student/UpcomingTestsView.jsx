@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Clock, CalendarDays, MapPin, CheckCircle2 } from 'lucide-react';
-import { ASSIGNMENTS, CURRENT_STUDENT, useLxStore } from '../../services/lxstore';
+import { ASSIGNMENTS, CURRENT_STUDENT, uselxstore } from '../../services/lxstore';
 import LxAgent from '../common/LxAgent';
 import { c, ui, grid } from '../../styles/theme';
 
@@ -34,7 +34,7 @@ const fmtDateTime = (iso) =>
   });
 
 const UpcomingTestsView = () => {
-  const { submissions } = useLxStore();
+  const { submissions } = uselxstore();
   const now = new Date();
 
   const tests = useMemo(

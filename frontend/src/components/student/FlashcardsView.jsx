@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ArrowLeft, BookOpen, ChevronLeft, ChevronRight, CheckCircle2, RotateCcw, Trophy } from 'lucide-react';
-import { useLxstore, toggleMastered } from '../../services/lxstore';
+import { uselxstore, toggleMastered } from '../../services/lxstore';
 import { SUBJECT_UNITS } from '../../data/quizUnits';
 import LxAgent from '../common/LxAgent';
 import { c, ui, grid } from '../../styles/theme';
@@ -14,7 +14,7 @@ const cardsFromUnit = (unit) =>
   }));
 
 const FlashcardsView = () => {
-  const { mastered } = useLxStore();
+  const { mastered } = uselxstore();
   const [subjectKey, setSubjectKey] = useState(null);
   const [unit, setUnit] = useState(null);
   const [index, setIndex] = useState(0);
