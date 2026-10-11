@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { SUBJECT_UNITS } from '../../data/quizUnits';
-import { useLxStore } from '../../services/lxStore';
+import { useLxStore } from '../../services/lxstore';
 import { canSeeSubject } from '../../services/session';
 import { ui } from '../../styles/theme';
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ArrowLeft, BookOpen, ChevronLeft, ChevronRight, CheckCircle2, RotateCcw, Trophy } from 'lucide-react';
-import { useLxStore, toggleMastered } from '../../services/lxstore';
+import { useLxstore, toggleMastered } from '../../services/lxstore';
 import { SUBJECT_UNITS } from '../../data/quizUnits';
 import LxAgent from '../common/LxAgent';
 import { c, ui, grid } from '../../styles/theme';

@@ -1,4 +1,4 @@
-import { CURRENT_STUDENT } from './lxStore';
+import { CURRENT_STUDENT } from './lxstore';
 
 // Holds the logged-in user's details
 let session = null;

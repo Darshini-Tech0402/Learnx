@@ -3,7 +3,7 @@ import { X, Clock, UploadCloud, FileText, Download } from 'lucide-react';
 import {
   ASSIGNMENTS,
   CURRENT_STUDENT,
-  useLxStore,
+  useLxstore,
   submitAssignment,
   downloadFile,
 } from '../../services/lxstore';
@@ -17,7 +17,7 @@ const fmtDue = (iso) =>
   `${new Date(iso).toLocaleDateString('en-IN', { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' })}, 23:59`;
 
 const AssignmentBrief = ({ assignmentId, onClose }) => {
-  const { submissions } = useLxStore();
+  const { submissions } = useLxstore();
   const inputRef = useRef(null);
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState(null);
